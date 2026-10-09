@@ -1,0 +1,48 @@
+node_modules/
+.expo/
+.expo-shared/
+dist/
+build/
+web-build/
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
+venv/
+coverage/
+.pytest_cache/
+.vscode/
+.idea/
+
+# Secrets - each folder has a .env.example to copy
+.env
+.env.*
+!.env.example
+
+# Private keys and certificates generated for local development
+infra/certs/dev/
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+neurolock-ca.crt
+
+# AAA server local state
+aaa-server/data/
+
+# Mobile builds and EAS signing material
+*.apk
+*.aab
+credentials.json
+frontend/android/
+frontend/ios/
+
+# Stray lockfile left over from the original layout (there is no root package.json)
+/package-lock.json
+
+# Original group-project report, slides and user guide - kept locally, not published
+/*.pdf

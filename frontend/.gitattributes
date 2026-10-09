@@ -1,0 +1,36 @@
+# Set default behavior for all files
+* text=auto
+
+# Force LF for shell scripts and Dockerfiles (important for CI/Linux)
+*.sh text eol=lf
+*.bash text eol=lf
+Dockerfile text eol=lf
+
+# Windows-specific scripts should keep CRLF
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Mark common binary formats to avoid accidental normalization
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
+
+# Treat JSON, YAML, and JS/TS as text (normalize to repo default)
+*.json text
+*.yml text
+*.yaml text
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+
+# Lockfiles should be text to avoid merge issues
+package-lock.json text
+yarn.lock text
+pnpm-lock.yaml text

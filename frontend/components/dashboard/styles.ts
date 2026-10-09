@@ -1,0 +1,36 @@
+import { StyleSheet } from 'react-native';
+import { colors } from '../common/layout';
+
+export const moduleStyles = StyleSheet.create({
+    list: { gap: 12 },
+    item: { marginBottom: 0 },
+    itemContent: { paddingVertical: 14 },
+    rowBetween: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12 },
+    row: { flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' },
+    title: { fontSize: 16, fontWeight: '700', color: colors.text },
+    subtitle: { fontSize: 13, color: colors.muted, marginTop: 2 },
+    meta: { fontSize: 12, color: colors.subtle, marginTop: 4 },
+    body: { fontSize: 14, color: '#334155', marginTop: 8, lineHeight: 20 },
+    badges: { flexDirection: 'row', gap: 6, flexWrap: 'wrap', alignItems: 'center' },
+    actions: { flexDirection: 'row', gap: 8, flexWrap: 'wrap', marginTop: 12 },
+    search: {
+        borderWidth: 1,
+        borderColor: '#cbd5e1',
+        borderRadius: 10,
+        paddingHorizontal: 12,
+        paddingVertical: 10,
+        fontSize: 15,
+        backgroundColor: '#fff',
+        color: colors.text,
+        marginBottom: 12,
+    },
+    grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 12, marginTop: 8 },
+    gridItem: { minWidth: 110, flexGrow: 1 },
+    gridLabel: { fontSize: 11, color: colors.subtle, textTransform: 'uppercase', letterSpacing: 0.5 },
+    gridValue: { fontSize: 14, color: colors.text, fontWeight: '600', marginTop: 2 },
+    notice: { marginBottom: 12 },
+    progressRow: { marginTop: 10 },
+    progressLabelRow: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 4 },
+    progressLabel: { fontSize: 12, color: colors.muted },
+    progressValue: { fontSize: 12, fontWeight: '700', color: colors.text },
+});

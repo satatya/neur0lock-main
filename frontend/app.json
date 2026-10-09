@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "NeuroLock",
+    "slug": "neurolock",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "extra": {
+      "apiUrl": ""
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.neurolock.app",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Allow NeuroLock to use Face ID for secure authentication"
+      }
+    },
+    "android": {
+      "package": "com.neurolock.app",
+      "permissions": [
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT"
+      ],
+      "versionCode": 1
+    },
+    "web": {
+      "name": "NeuroLock",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-local-authentication",
+      "expo-secure-store",
+      "expo-asset",
+      "expo-status-bar",
+      "expo-font",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ]
+  }
+}

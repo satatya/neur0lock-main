@@ -1,0 +1,11 @@
+# Files not uploaded to the EAS build servers
+node_modules/
+.expo/
+dist/
+web-build/
+android/
+ios/
+*.log
+.env
+nginx.conf
+Dockerfile
